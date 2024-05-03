@@ -12,19 +12,27 @@ function isPalindrome(str) {
 function checkPalindrome() {
     // Get the user input value
     const userInput = document.getElementById('text-input').value;
-    // Check if the input is a palindrome
-    const result = isPalindrome(userInput);
     // Get the result text element
-    const resultText = document.getElementById('result-text');
-    // Set the result message based on whether it's a palindrome or not
-    if (result) {
-        resultText.textContent = `"${userInput}" is a palindrome.`; // Include quotation marks around the input
+    const resultText = document.getElementById('result');
+
+    // Check if the user has entered anything
+    if (userInput.trim() === "") {
+        resultText.textContent = "Please input a value."; // Display an alert if input is empty
+        resultText.style.color = 'red'; // Optional: Change text color to red for the alert
     } else {
-        resultText.textContent = `"${userInput}" is not a palindrome.`; // Same as above
+        // Check if the input is a palindrome
+        const result = isPalindrome(userInput);
+        resultText.style.color = 'black'; // Reset text color to default
+        // Set the result message based on whether it's a palindrome or not
+        if (result) {
+            resultText.textContent = `"${userInput}" is a palindrome.`; // Include quotation marks around the input
+        } else {
+            resultText.textContent = `"${userInput}" is not a palindrome.`; // Same as above
+        }
     }
 }
 
 // Add event listener to the check button when the document is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('check-button').addEventListener('click', checkPalindrome);
+    document.getElementById('check-btn').addEventListener('click', checkPalindrome);
 });

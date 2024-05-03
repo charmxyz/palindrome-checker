@@ -42,7 +42,7 @@ body {
   text-align: center;
 }
 
-#check-button {
+#check-btn {
   width: 70px; /* Set a fixed width for the button */
   margin-left: 10px; /* Add some space between the input box and the button */
   border-radius: 100px; /* Retain the rounded corners for the button */
@@ -54,7 +54,9 @@ body {
   border: none;
 }
 
-#result-text {
+#result {
   text-align: center;
+  padding:10px;
+  padding-bottom:0px;
   margin-bottom: 0%;
 }
