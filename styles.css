@@ -5,7 +5,7 @@ body {
 }
 
 #game {
-  max-width: 500px;
+  max-width: 400px;
   max-height: 500px;
   background-color: #ffffff;
   color: #000000; /* Changed text color to black for better visibility */
@@ -26,19 +26,35 @@ body {
 
 #text {
   margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: center;
 }
 
 #text-input {
-  width: 70%;
+  width: calc(100% - 100px); /* Subtract the width of the button from the total width of the #game */
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #ffffff;
+  border-bottom: 2px solid purple;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
 }
 
 #check-button {
-  border-radius: 100px;
+  width: 70px; /* Set a fixed width for the button */
+  margin-left: 10px; /* Add some space between the input box and the button */
+  border-radius: 100px; /* Retain the rounded corners for the button */
   background-color: purple;
   color: white;
   padding: 10px;
   box-shadow: none;
-  outline: purple;
   cursor: pointer;
   border: none;
+}
+
+#result-text {
+  text-align: center;
+  margin-bottom: 0%;
 }
