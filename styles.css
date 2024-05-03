@@ -20,4 +20,13 @@ body {
   color: #ffffff ;
   text-align: center;
   font-family: 'Montserrat', sans-serif; /* Applying Montserrat font */
+  margin-top: 20%;
+}
+
+#text {
+  margin-top: 0%;
+}
+
+#text-input {
+  width: 70%;
 }
