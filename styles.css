@@ -14,6 +14,7 @@ body {
   margin-bottom: 30px;
   padding: 30px;
   font-family: 'Montserrat', sans-serif; /* Applying Montserrat font */
+  border-radius: 10px;
 }
 
 #title {
@@ -29,4 +30,15 @@ body {
 
 #text-input {
   width: 70%;
+}
+
+#check-button {
+  border-radius: 100px;
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  box-shadow: none;
+  outline: purple;
+  cursor: pointer;
+  border: none;
 }
